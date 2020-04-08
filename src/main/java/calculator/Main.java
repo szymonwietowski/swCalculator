@@ -1,17 +1,14 @@
 package calculator;
 
-import java.util.Optional;
-
 public class Main {
 
 	public static void main(String[] args) {
 		
-		Optional<String> path = Optional.of(args[0]);
-		
-		if(path.isPresent()) {
+		if(args.length > 0) {
 			
+			String path = args[0];
 			Calculator calculator = new Calculator();
-			double result = calculator.calculate(path.get());
+			double result = calculator.calculate(path);
 			System.out.println(result);
 			
 		}
