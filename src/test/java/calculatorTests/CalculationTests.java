@@ -6,6 +6,11 @@ import org.junit.Test;
 
 import calculator.Calculation;
 
+/**
+ * @author Szymon Wietowski
+ *
+ * Calculation class unit tests.
+ */
 public class CalculationTests {
 
 	private Calculation calc;

@@ -1,5 +1,10 @@
 package calculator;
 
+/**
+ * @author Szymon Wietowski
+ *
+ * Main application class.
+ */
 public class Main {
 
 	public static void main(String[] args) {

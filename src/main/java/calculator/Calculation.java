@@ -5,6 +5,12 @@ import java.lang.reflect.Method;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * @author Szymon Wietowski
+ *
+ * Calculation class accumulate mathematical operations from file, 
+ * and executes its with given variable when 'apply' command appears.
+ */
 public class Calculation {
 
 	private double variable;
@@ -19,6 +25,12 @@ public class Calculation {
 		return this.variable;
 	}
 	
+	/**
+	 * @param operationDesc (String) - "<operation_naem> <variable>", eg. "add 3"
+	 * 
+	 * Saves given mathematical operation, 
+	 * when 'apply' command appears execute all of them with given variable as initial value.
+	 */
 	public void processOperation(String operationDesc) {
 		
 		String[] operationData = operationDesc.split(" ");

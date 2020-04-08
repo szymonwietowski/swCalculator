@@ -4,8 +4,18 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+/**
+ * @author Szymon Wietowski
+ *
+ * Calculator class take file with calculations procedures and 
+ * returns result as double.
+ */
 public class Calculator {
 	
+	/**
+	 * @param path (String) - path to data file directory.
+	 * @return (double) - result of calculations.
+	 */
 	public double calculate(String path) {
 		
 		Calculation calculation = new Calculation(0.0);
@@ -17,6 +27,10 @@ public class Calculator {
 		return calculation.getResult();
 	}
 	
+	/**
+	 * @param path (String) - path to data file directory.
+	 * @return (Scanner) - file reader.
+	 */
 	private Scanner extractFileReader(String path) {
 		
 		Scanner reader = null;
